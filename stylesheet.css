@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: #113c4a;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 60px;
+  margin: 20px 0 0 60px;
+  float: left;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    margin: 30px 60px 0 0;
+}
+ 
+  #login {
+    background-color: #4d8f83;
+    border-radius: 5px;
+    margin-left: 25px;
+    box-shadow: 0.5px 0.5px  rgba(255,255,255);
+}
+
+  #login:hover {
+    opacity: 0.8;
+  }
+  
+  .nav-list a  {
+    line-height: 40px;
+    padding: 0 30px;
+    color: white;
+    display: flex;
+    float: left;     
+}
+
+.nav-list a:hover {
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading {
+    height: 700px;
+    width: 100%;
+    background-image: url(./assets/image/background.jpg);
+    background-size: cover;
+    color: teal;
+    text-align: center;
+    margin-bottom: 60px;
+    display: flex;
+    text-align: center;
+}
+
+.heading-title {
+  background-color: #ffff;
+  display: inline-block;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin: auto;
+  box-shadow: 2px 2px 2px #4d8f83;
+}
+
+.heading-title span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.heading-title span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.heading-title:hover span {
+  padding-right: 25px;
+}
+
+.heading-title:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.articles {   
+  background-color: white;
+  padding: 10px 60px 0 60px;
+  height: 1450px;
+  width: 100%;
+  text-align: center;  
+}
+
+.article-icon {
+  font-size: 20px;
+  width: 33.3333333%;
+  padding: 20px 50px 20px 50px;
+  font-weight: bold;
+  color:  #113c4a;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: center;
+}
+
+.article-icon:hover {
+  transform: translateY(10px);
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.articles h2 {
+  padding: 15px 20px 20px 20px;
+  border-radius: 15px;
+  background-color: #4d8f83;
+  display: block;
+  width: 550px;
+  color: white;
+  margin: 0 auto 60px auto;
+}
+
+.testimoni-section {
+  background-color: #4d8f83;
+  padding: 10px 60px 0 60px;
+  height: 720px;
+  width: 100%;
+  text-align: center;
+}
+
+.testimoni-title {
+  padding: 0.2px 20px;
+  border-radius: 15px;
+  background-color: white;
+  width: 550px;
+  color:#113c4a;
+  margin: 70px auto 60px auto;
+}
+
+.testimoni {
+  font-size: 17px;
+  width: 33.3333333%;
+  padding: 20px 50px 20px 50px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimoni p {
+  font-weight: normal;
+  position: absolute;
+  color: white;
+  margin-top: 360px;
+}
+
+aside {
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(1, auto);
+  height: 320px;
+  width: 100%;
+  background-color: white;
+}
+
+.contacts {
+  margin-left: 100px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.contact-title {
+  margin-top: 60px;
+  padding-right: 20px;
+  color: #113c4a;
+  margin-bottom: 30px;
+}
+
+.contact-link {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.contact-link:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.create {
+  margin-top: 50px;
+  color: #113c4a;
+}
+
+.create-info {
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+}
+
+.create-info img {
+  width: 120px;
+}
+
+.create-info ul {
+  padding-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background:#4d8f83;
+  color: white;
+}
+
+
+
+@media all and (max-width: 1024px) {
+  .articles {   
+    background-color: white;
+    padding: 10px 60px 0 60px;
+    height: 1900px;
+    width: 100%;
+    text-align: center;  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .article-icon {
+    font-size: 20px;
+    width: 50%;
+    padding: 20px 50px 20px 50px;
+    font-weight: bold;
+    color:  #113c4a;
+    
+    float: left;
+    justify-content: center;
+  }
+  
+  .article-icon:hover {
+    transform: translateY(10px);
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  .articles h2 {
+    padding: 15px 20px 0 20px;
+    border-radius: 15px;
+    background-color: #4d8f83;
+    display: block;
+    width: 550px;
+    color: white;
+    margin: 0 auto 60px auto;
+  }
+
+  .testimoni-section {
+    background-color: #4d8f83;
+    padding: 10px 60px 0 60px;
+    height: 1720px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .testimoni-title {
+    padding: 0.2px 20px;
+    border-radius: 15px;
+    background-color: white;
+    width: 550px;
+    color:#113c4a;
+    margin: 70px auto 60px auto;
+  }
+  
+  .testimoni {
+    font-size: 17px;
+    width: 100%;
+    padding: 40px 150px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .testimoni p {
+    font-weight: normal;
+    position: absolute;
+    color: white;
+    margin-top: 400px;
+  }
+
+aside {
+  display:grid;
+  list-style-type:none;
+  margin: 0;
+  grid-template-columns: repeat(1, auto);
+  grid-template-rows: 37% 63%;
+  height: 500px;
+  width: 100%;
+  background-color: white;
+}
+
+  .contacts {
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    margin-left: 60px;
+    padding-top: 10px;
+    text-align: left;      
+  }
+  
+  .contact-title {
+    margin-top: 60px;
+    padding-right: 20px;
+    color: #113c4a;
+    margin-bottom: 30px;
+  }
+  
+  .contact-link {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    justify-content: center;
+    margin: 0 10px;
+  }
+  
+  .contact-link:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .create {
+    margin-left: 60px;
+    color: #113c4a;
+  }
+  
+  .create-info {
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+  }
+  
+  .create-info img {
+    width: 120px;
+  }
+  
+  .create-info ul {
+    padding-top: 10px;
+  }
+}
